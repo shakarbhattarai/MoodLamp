@@ -6,7 +6,7 @@ class imageProcess:
                 headers = {
                     # Request headers
                     'Content-Type': 'application/json',
-                    'Ocp-Apim-Subscription-Key': 'a0087b0f59144ae0a40ab33cdcdbec50',
+                    'Ocp-Apim-Subscription-Key': '******',
                 }
                 self.imageurl=imageurl
                 
