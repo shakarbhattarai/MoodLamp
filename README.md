@@ -1,6 +1,7 @@
 # MoodLamp
-Web based platform for data analysis and visualization that let's you enter an Instagram or/and Twitter username, and performs
-sentiment analaysis on the data to predict your mood.
+Web based platform for data analysis and visualization that let's you enter an Instagram or/and Twitter username, and performs sentiment analaysis on the data(the tweetsn and feeds for over a week) to predict your mood in real time
+
+The mood is visualized on the basis of the color of a lamp , that is controlled via a micro controller.
 
 The sentiment Analysis comprises of:
 
