@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import indicoio
 
-indicoio.config.api_key = '13dc8340875d36746ad23178688494d4'
+indicoio.config.api_key = '********'
 #This is the actual one
 class textProcess:
         
