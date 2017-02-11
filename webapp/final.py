@@ -20,12 +20,14 @@ def getMood(instagram_user,twitter_username):
         print "******************************"
         d = datetime.utcnow()
         current = calendar.timegm(d.utctimetuple())
-       
+        print "This is sorted on basis of time"
+        print aggr
+        print "***********"
         #print instagram_values_caption
         # This basically subs the dates in the aggr from current date and creates a mappable value. Garna time lagya thyo do not  modify.
-        diff=[(current- int(a))/500 for a in (aggr[j][0] for j in range(len(aggr)))] 
+        diff=[(current- int(a))/25 for a in (aggr[j][0] for j in range(len(aggr)))] 
         
-        multiplier=[pow(1.01,-x) for x in diff]
+        multiplier=[pow(1.001,-x) for x in diff]
        
         norm= [i/sum(multiplier) for i in multiplier]
        

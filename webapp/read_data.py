@@ -7,3 +7,7 @@ def getData():
                 with open('pic', 'rb') as fp:
                         picture=pickle.load(fp)
 	        return itemlist,tweetlist,picture
+def getColor():
+                with open ('colorfile', 'rb') as fp:
+                        itemlist = pickle.load(fp)	       
+	        return itemlist

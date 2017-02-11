@@ -7,23 +7,14 @@
                 <div class="row margin-top-md padding-bottom-md">
                     <div class="col-sm-12 story">
                         <div class="row">
-                            <script type="text/javascript">
-                        window.onload = function () {
-                            var chart = new CanvasJS.Chart("chartContainer", {
-                                title: {
-                                    text: "Basic Column Chart"
-                                },
-                                data: [{
-                                    type: "column",
-                                    dataPoints: [
-                                       {{mood}}
-                                    ]
-                                }]
-                            });
-                            chart.render();
-                        }
-                    </script>
-                            <div id="lineChartContainer" style="height: 400px; width: 100%;"></div>
+							{% if moods %}
+								<dl style="width: 300px">
+									{% for label,value in moods %}
+										<dt>{{label}}</dt>
+										<dd><div id="data-one" class="bar" style="width: {{value}}%">{{value}}</div></dd>
+									{% endfor %}
+								</dl>
+							{% endif %}
                         </div>
                 </div>
             </div>
